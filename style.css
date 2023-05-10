@@ -1,0 +1,211 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #050505;
+}
+
+.cube
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+   0%
+   {
+    transform: rotateX(-30deg) rotateY(0deg);
+   }
+   100%
+   {
+    transform: rotateX(-30deg) rotateY(360deg);
+   }
+    
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #151515;
+    transform: rotateX(90deg) translateZ(75px);
+}
+.top::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #0f0;
+    transform: translateZ(-250px);
+    filter: blur(20px);
+    box-shadow: 0px 0px 120px rgba(0,255,0,0.2),
+    0px 0px 200px rgba(0,255,0,0.4),
+    0px 0px 300px rgba(0,255,0,0.6),
+    0px 0px 400px rgba(0,255,0,0.8),
+    0px 0px 500px rgba(0,255,0,1);
+}
+.cube div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.cube div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(#151515,#00ec00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
+
+/* cube-1 */
+
+.cube-1
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+   0%
+   {
+    transform: rotateX(-30deg) rotateY(0deg);
+   }
+   100%
+   {
+    transform: rotateX(-30deg) rotateY(360deg);
+   }
+    
+}
+.top-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #151515;
+    transform: rotateX(90deg) translateZ(75px);
+}
+.top-1::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 0, 0);
+    transform: translateZ(-250px);
+    filter: blur(20px);
+    box-shadow: 0px 0px 120px rgba(0,255,0, 0.2),
+    0px 0px 200px rgba(255, 0, 0, 0.4),
+    0px 0px 300px rgba(255, 0, 0, 0.6),
+    0px 0px 400px rgba(255, 0, 0, 0.8),
+    0px 0px 500px rgb(255, 0, 0, 1);
+}
+.cube-1 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.cube-1 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(#151515,#ea0101);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
+
+/* cube-2 */
+
+.cube-2
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transform-style: preserve-3d;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+   0%
+   {
+    transform: rotateX(-30deg) rotateY(0deg);
+   }
+   100%
+   {
+    transform: rotateX(-30deg) rotateY(360deg);
+   }
+    
+}
+.top-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #151515;
+    transform: rotateX(90deg) translateZ(75px);
+}
+.top-2::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: rgb(0, 0, 255);
+    transform: translateZ(-250px);
+    filter: blur(20px);
+    box-shadow: 0px 0px 120px rgba(0, 0, 255, 0.2),
+    0px 0px 200px rgba(0, 0, 255, 0.4),
+    0px 0px 300px rgba(0, 0, 255, 0.6),
+    0px 0px 400px rgba(0, 0, 255, 0.8),
+    0px 0px 500px rgba(0, 0, 255, 1);
+}
+.cube-2 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.cube-2 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(#151515,#013ffa);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
